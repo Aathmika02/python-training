@@ -23,9 +23,9 @@ def match_ends(words):
     for i in words:
         if(len(i)>=2 and i[0]==i[-1]):
             s1.append(i)
-    print(len(s1))        
+            
   # +++your code here+++
-    return
+    return len(s1)
 
 
 # B. front_x
@@ -46,9 +46,9 @@ def front_x(words):
         else:
             l2.append(i)
             
-    print(sorted(l1)+sorted(l2))        
+          
   # +++your code here+++
-    return
+    return sorted(l1)+sorted(l2)
 
 
 
@@ -62,10 +62,10 @@ def last(tuples):
         return tuples[-1]
         
 def sort_last(tuples):
-      print(sorted(tuples,key=last))
+     
       
   # +++your code here+++
-      return
+      return sorted(tuples,key=last)
 
 
 # Simple provided test() function used in main() to print
