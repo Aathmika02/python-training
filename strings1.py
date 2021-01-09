@@ -48,11 +48,9 @@ def both_ends(s):
   if(len(s)<2):
         return ''
   else:
-      end1=s[:2]
-      end2=s[-2:]
-      return end1+end2
+      return s[:2]+s[-2:]
       
-  return    
+     
 
 
 # C. fix_start
@@ -66,10 +64,11 @@ def both_ends(s):
 # where all instances of stra have been replaced by strb.
 def fix_start(s):
   # +++your code here+++
+  
   s1=s[0]
   s=s.replace(s1,'*')
   
-  return s1+s[1:len(s)]
+  return s1+s[1:]
 
 
 # D. MixUp
@@ -85,11 +84,9 @@ def mix_up(a, b):
   b1=a[:2]
   a=a[2:len(a)]
   b=b[2:len(b)]
-  a_new=a1+a
-  b_new=b1+b
-  str=a_new+' '+b_new
   
-  return str
+   
+  return (a1+a)+' '+(b1+b)
 
 
 # Provided simple test() function used in main() to print
