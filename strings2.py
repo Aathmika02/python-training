@@ -72,6 +72,8 @@ def front_back(a, b):
     print(a[0:a1]+b[0:b1]+a[a1:]+b[b1:])    
     return
 
+
+
 # Simple provided test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
 def test(got, expected):
@@ -85,6 +87,7 @@ def test(got, expected):
 # main() calls the above functions with interesting inputs,
 # using the above test() to check if the result is correct or not.
 def main():
+   
   print('verbing')
   test(verbing('hail'), 'hailing')
   test(verbing('swiming'), 'swimingly')
@@ -102,6 +105,7 @@ def main():
   test(front_back('abcd', 'xy'), 'abxcdy')
   test(front_back('abcde', 'xyz'), 'abcxydez')
   test(front_back('Kitten', 'Donut'), 'KitDontenut')
+
 
 if __name__ == '__main__':
   main()
