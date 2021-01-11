@@ -81,7 +81,7 @@ def test(got, expected):
 # Calls the above functions with interesting inputs.
 def main():
   print('match_ends')
-  test(match_ends(['aba', 'xyz', 'aa', 'x', 'bbb']), 3)
+  test(match_ends(['aba', 'xyz', 'aa', 'x', 'bbb']), 3) 
   test(match_ends(['', 'x', 'xy', 'xyx', 'xx']), 2)
   test(match_ends(['aaa', 'be', 'abc', 'hevllo']), 1)
 
